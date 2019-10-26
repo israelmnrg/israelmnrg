@@ -1,13 +1,169 @@
-body {
-    font: 400 15px Tahoma, sans-serif;
-    line-height: 1.8;
-    color: #818181;
-    background-color: #f6f6f6;
+body{/*especifidad de 1*/
+    background-color: rgb(49, 0, 139);
 }
+
+
+
+h1{
+    border-radius: 40px;
+    padding: 0.1em;
+    margin:0.5em;
+    text-align: center;
+    font-size-adjust:0.5;
+    background-color:rgb(54, 42, 218);
+    font-weight: 700;
+}
+
 h1 {
-    background-color:#FF5733; 
-    color: #fff;
-    text-transform: uppercase;
-    padding: 100px 25px;
-    text-align: center;     
+	font-family: "Gill Sans", sans-serif;
+    font-size:6em;   
 }
+
+
+
+h2,h3{
+    border-radius: 10px;
+    padding: 0.1em;
+    margin:0.5em;
+    text-align: center;
+    font-size-adjust:0.5;
+    background-color:rgb(60, 122, 236);
+    font-weight: 700;
+}
+
+h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size:3em;
+}
+
+h3{
+    font-family: 'Titillium Web', sans-serif;
+    font-size:2em;
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2em;
+    text-justify: auto;
+    margin: 1.5em;
+    color: #FFFFFF;
+}
+
+nav{
+    padding:0em;
+    overflow: hidden;
+    margin: 1em;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 23px;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+    background-color: rgb(54, 42, 218);
+    color: black;
+}
+
+nav li a:hover {
+    background-color: rgb(54, 42, 218);
+    margin-top: -2;
+    padding-bottom: 12px;]
+}
+
+
+aside a {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1em;
+    color: #FFFFFF;
+}
+
+/** a=0 b=0 c=2**/
+footer img {
+	padding-top: 15px;
+	border:none;
+	padding-bottom: 15px;
+}
+
+img {
+	display:block;
+	margin: 0 auto;
+	border: 1px solid white;
+}
+
+/** a=0 b=1 c=1**/
+img.dos{
+	float:right;
+	margin-left: 20px;
+}
+
+
+video {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5em;
+    border: 1px solid white;
+    text-align:center;
+}
+
+ul { /*especifidad de 1*/
+    list-style-type: disc;
+    list-style-position: outside; 
+}
+
+li{
+    background: rgb(60, 122, 236);
+}
+
+/*tabla*/
+
+/* a = 0 b = 1 c = 1 -> Especificidad = 2 */
+tr:nth-child(even) {
+    background-color: rgb(60, 122, 236);
+}
+
+/* a = 0 b = 2 c = 1 -> Especificidad = 3 */
+tr:nth-child(even):hover {
+    background-color: rgb(60, 122, 236);
+}
+
+/* a = 0 b = 1 c = 1 -> Especificidad = 2 */
+tr {
+    background-color: #FFFFFF;
+    color: #2a1705;
+}
+
+/* a = 0 b = 1 c = 1 -> Especificidad = 2 */
+tr:hover {
+    background-color: #ddd;
+}
+
+/* a = 0 b = 0 c = 1 -> Especificidad = 1 */
+th {
+    background-color: rgb(54, 42, 218);
+    color: white;
+}
+
+/* a = 0 b = 0 c = 1 -> Especificidad = 1 */
+td {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2em;
+    margin: 1.5em;
+}
+
+/* a = 0 b = 0 c = 1 -> Especificidad = 1 */
+table {
+    border: black solid;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: 'Copperplate Gothic Bold', console, sans-serif;
+    margin: 1.5em;
+    text-justify: auto;
+}
+
+
+
